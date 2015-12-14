@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>How do assistive technologies handle Font Awesome?</title>
+    <link rel="stylesheet" href="core.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.css">
+  </head>
+  <body>
+    <main>
+      <h1>Do you screen readers switch pronunciation when language of a document is switched?</h1>
+      <p>This document contains a button labelled “Switch language”. If the button is activated the language of the page will be changed. Screen readers should change there pronunciation after the change to properly pronounce words. Test results are in the table on this page.</p>
+
+      <!-- NOTE: might need to update the table as we go along -->
+      <article id="test-1" tabindex="-1">
+        <h2>Test one: <code>lang</code> attribute on <code>html</code> element</h2>
+        <p>If all content is switched out to the same language; changing the <code>lang</code> attribute on <code>html</code> element should suffice.</p>
+
+        <section>
+          <h3>Example</h3>
+
+          <p>This test is located in <a href="test-1.html">test-1.html</a>. Expected result: screen reader should switch language/pronunciation. Before language change:</p>
+
+          <p>
+            <code>
+              &lt;html lang="en"&gt;...&lt;/html&gt;
+            </code>
+          </p>
+
+          <p>After language change:</p>
+
+          <p>
+            <code>
+              &lt;html lang="es"&gt;...&lt;/html&gt;
+            </code>
+          </p>
+        </section>
+
+        <h3>Results</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">AT, Browser, OS</th>
+              <th scope="col">Switched pronunciation?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">VoiceOver, Safari 9, OS X 10.10</th>
+              <td class="fail">No</td>
+            </tr>
+            <tr>
+              <th scope="row">JAWS, IE 11, Windows 10</th>
+              <td class="fail">No</td>
+            </tr>
+            <tr>
+              <th scope="row">NVDA, Firefox, Windows 10</th>
+              <td class="pass">Yes</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- <h3>Issues</h3>
+        <ul>
+          <li></li>
+        </ul> -->
+      </article>
+
+    </main>
+  </body>
+</html>
