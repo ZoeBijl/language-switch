@@ -1,5 +1,5 @@
 # Screen Reader Language Switch
-Do you screen readers switch pronunciation when language of a document is switched? There is a page with [tests and results](https://rawgit.com/ZoeBijl/language-switch/master/tests/index.html).
+Do screen readers switch pronunciation when language of a document is switched? There is a page with [tests and results](https://rawgit.com/ZoeBijl/language-switch/master/tests/index.html).
 
 ## Contributors
 * Zoë Bijl
