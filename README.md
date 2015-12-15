@@ -4,3 +4,4 @@ Do screen readers switch pronunciation when language of a document is switched? 
 ## Contributors
 * Zoë Bijl
 * Luis Garcia ([@StommePoes](https://twitter.com/garcialo))
+* Mallory ([@StommePoes](https://twitter.com/StommePoes))
